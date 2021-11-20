@@ -28,8 +28,11 @@ namespace HashTable
             hash.Add("16", "paranoid");
             hash.Add("17", "avoidable");
             hash.Add("18", "situations");
-            
 
+            string hash17 = hash.Get("17");
+            hash.Remove("17");
+
+            Console.WriteLine("\n **" + hash17 + "**  is been removed");
         }
     }
 }
